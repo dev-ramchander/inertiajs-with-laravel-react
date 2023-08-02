@@ -16,9 +16,9 @@ use App\Http\Controllers\UserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use Inertia\Inertia;
 Route::get('/', function () {
-    return view('welcome');
+    return Inertia::render('Homepage');
 });
 
 Auth::routes();
